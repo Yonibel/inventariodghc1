@@ -23,7 +23,7 @@ Route::resource('sede5s','App\Http\Controllers\Sede5Controller');
 Route::resource('categorias','App\Http\Controllers\CategoriaController');
 Route::resource('sectors','App\Http\Controllers\SectorController');
 Route::resource('sedes','App\Http\Controllers\SedeController');
-Route::resource('articulos','App\Http\Controllers\ArticuloController');
+Route::resource('articulos',App\Http\Controllers\ArticuloController::class  );
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
